@@ -1,6 +1,15 @@
 def redact(original_string):
     new_string = ""
+    sentence=""
     for word in original_string.split(" "):
+        new_string=word + " "
+        if word[0]== word[0].upper():
+            new_string= (new_string.replace(new_string, "[REDACTED]")) + " "
+        else:
+            new_string = (new_string)
+        sentence=sentence+new_string
+    print(sentence) 
+            
         # YOUR CODE HERE
     return new_string
 
